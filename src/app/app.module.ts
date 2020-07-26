@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { AppendPipe } from '../custome.pipe';
+import { AppendPipe, FilterPipe } from '../custome.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, AppendPipe ],
+  declarations: [ AppComponent, HelloComponent, AppendPipe, FilterPipe ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

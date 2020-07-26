@@ -2,5 +2,10 @@
 <p>
   Start editing to see some magic happen :)
 </p>
-<h1>Custom Pipe</h1>
+<h1>impure Pipe</h1>
 <span>Custome Pipe: {{ 'Testing' | append:'$' }}</span>
+<input type="text" [(ngModel)]="value" #userInput>
+<button (click)="addUser(userInput.value)">Add USer</button>
+<div *ngFor="let data of users | filter: 'gender': 'm'">
+{{ data.name }}
+</div>
