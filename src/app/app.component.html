@@ -9,3 +9,6 @@
 <div *ngFor="let data of users | filter: 'gender': 'm'">
 {{ data.name }}
 </div>
+
+<div> Async Pipe {{ jsonData | async | json }}</div>
+<div> Date: {{ date$ | async }}</div>
